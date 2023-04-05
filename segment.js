@@ -17,4 +17,15 @@ class Segment {
         const length = Math.sqrt (squareSum);
         return length;
     }
+    get length() {
+        const deltaX = this.pointA.x - this.pointB.x;
+        const deltaY = this.pointA.y - this.pointB.y;
+        const squareDX = deltaX ** 2;
+        const squareDY = deltaY ** 2;
+        const squareSum = squareDX + squareDY;
+        const length = Math.sqrt(squareSum);
+        return length;
+        
+
+    }
 }
